@@ -1,8 +1,43 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
+	<PropertyGroup Label="NugetProperties">
+		<Authors>Kebechet</Authors>
+		<IsPackable>true</IsPackable>
+		<PackageId>Kebechet.Extensions.IsNullOrEmpty</PackageId>
+		<Description>Exposes IsNullOrEmpty method for basic types and collections.</Description>
+		<RepositoryUrl>https://github.com/Kebechet/Extensions.IsNullOrEmpty</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/Kebechet/Extensions.IsNullOrEmpty</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<RepositoryType>git</RepositoryType>
+		<OutputType>Library</OutputType>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>embedded</DebugType>
+		<PackageIcon>icon.png</PackageIcon>
+		<Version>1.0.0</Version>
+		<PackageReleaseNotes>Initial release</PackageReleaseNotes>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+
+		<None Include="..\..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+
+		<None Include="..\..\icon.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 </Project>
