@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IsNullOrEmpty
+namespace IsNullOrEmpty.Extensions
 {
     public static class GuidExtensions
     {

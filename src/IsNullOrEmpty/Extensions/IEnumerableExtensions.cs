@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace IsNullOrEmpty
+namespace IsNullOrEmpty.Extensions
 {
     public static class IEnumerableExtensions
     {

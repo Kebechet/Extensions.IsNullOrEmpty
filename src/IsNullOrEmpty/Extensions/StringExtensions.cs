@@ -1,4 +1,4 @@
-﻿namespace IsNullOrEmpty
+﻿namespace IsNullOrEmpty.Extensions
 {
     public static class StringExtensions
     {
