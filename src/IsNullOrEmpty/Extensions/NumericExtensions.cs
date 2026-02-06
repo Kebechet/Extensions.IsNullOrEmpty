@@ -1,20 +1,22 @@
-﻿namespace IsNullOrEmpty.Extensions
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace IsNullOrEmpty.Extensions
 {
     public static class NumericExtensions
     {
-        public static bool IsNullOrZero(this int? value) =>
+        public static bool IsNullOrZero([NotNullWhen(false)] this int? value) =>
             value is null || value == 0;
 
-        public static bool IsNullOrZero(this long? value) =>
+        public static bool IsNullOrZero([NotNullWhen(false)] this long? value) =>
             value is null || value == 0L;
 
-        public static bool IsNullOrZero(this double? value) =>
+        public static bool IsNullOrZero([NotNullWhen(false)] this double? value) =>
             value is null || value == 0.0;
 
-        public static bool IsNullOrZero(this decimal? value) =>
+        public static bool IsNullOrZero([NotNullWhen(false)] this decimal? value) =>
             value is null || value == 0m;
 
-        public static bool IsNullOrZero(this float? value) =>
+        public static bool IsNullOrZero([NotNullWhen(false)] this float? value) =>
             value is null || value == 0f;
     }
 }

@@ -57,6 +57,22 @@ bool k = dec.IsNullOrZero();         // false
 bool m = fl.IsNullOrZero();          // true
 ```
 
+## Nullable flow analysis
+
+All methods are annotated with `[NotNullWhen(false)]`, so Roslyn's nullable analysis understands the null check:
+
+```csharp
+string? name = GetName();
+
+if (name.IsNullOrEmpty())
+{
+    return;
+}
+
+// No nullable warning here — Roslyn knows name is not null
+Console.WriteLine(name.Length);
+```
+
 ## API
 
 - `string?`:
