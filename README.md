@@ -3,6 +3,7 @@
 # Extensions.IsNullOrEmpty
 [![NuGet Version](https://img.shields.io/nuget/v/Kebechet.Extensions.IsNullOrEmpty)](https://www.nuget.org/packages/Kebechet.Extensions.IsNullOrEmpty/)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/Kebechet.Extensions.IsNullOrEmpty)](https://www.nuget.org/packages/Kebechet.Extensions.IsNullOrEmpty/)
+[![CI](https://github.com/Kebechet/Extensions.IsNullOrEmpty/actions/workflows/ci.yml/badge.svg)](https://github.com/Kebechet/Extensions.IsNullOrEmpty/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/Kebechet/Extensions.IsNullOrEmpty/graph/badge.svg)](https://codecov.io/gh/Kebechet/Extensions.IsNullOrEmpty)
 [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/samuel_sidor.svg?style=social&label=Follow%20samuel_sidor)](https://x.com/samuel_sidor)
 
