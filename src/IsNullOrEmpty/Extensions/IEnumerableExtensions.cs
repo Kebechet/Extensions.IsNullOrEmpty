@@ -1,11 +1,13 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Runtime.CompilerServices;
 
 namespace IsNullOrEmpty.Extensions
 {
     public static class IEnumerableExtensions
     {
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool IsNullOrEmpty<T>([NotNullWhen(false)] this IEnumerable<T>? enumerable)
         {
             if (enumerable is null)

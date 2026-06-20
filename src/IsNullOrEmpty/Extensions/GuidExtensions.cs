@@ -1,13 +1,15 @@
-﻿using System;
+using System;
 using System.Diagnostics.CodeAnalysis;
+using System.Runtime.CompilerServices;
 
 namespace IsNullOrEmpty.Extensions
 {
     public static class GuidExtensions
     {
-    	public static bool IsNullOrEmpty([NotNullWhen(false)] this Guid? guid)
-    	{
-    		return guid is null || guid == Guid.Empty;
-    	}
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static bool IsNullOrEmpty([NotNullWhen(false)] this Guid? guid)
+        {
+            return guid is null || guid == Guid.Empty;
+        }
     }
 }
