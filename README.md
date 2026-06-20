@@ -82,5 +82,5 @@ Console.WriteLine(name.Length);
   - `IsNullOrEmpty()`
 - `Guid?`:
   - `IsNullOrEmpty()`
-- Numerics (`int?`, `long?`, `double?`, `decimal?`, `float?`):
+- Numerics (`sbyte?`, `byte?`, `short?`, `ushort?`, `int?`, `uint?`, `long?`, `ulong?`, `double?`, `decimal?`, `float?`):
   - `IsNullOrZero()`
